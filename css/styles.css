@@ -1,0 +1,386 @@
+/* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700|Anton);
+
+body {
+  color: #3a3a3a;
+  font-family:'Montserrat', sans-serif;
+}
+html,
+body {
+    height: 100%;
+  background-color: #ddd;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+p {
+	text-align: justify;
+	font-family: 'Oxygen', sans-serif;
+}
+
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 99999;
+}
+
+
+.navbar-default {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid white;
+  border-radius: 0 0 0px 0px;
+  padding: 0;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  overflow: hidden;
+  font-family: 'Anton', sans-serif;
+}
+.navbar-default .first a {
+  border-radius: 0 0 0 5px;
+}
+.navbar-default .navbar-brand {
+  margin-right: 50px;
+  margin-left: 20px;
+  width: 200px;
+  height: 78px;
+  background: url(../img/logo2.jpg) no-repeat 0 50%;
+}
+.navbar-default .navbar-nav > li {
+  margin-left: 1px;
+}
+.navbar-default .navbar-nav > li > a {
+  padding: 30px 25px;
+  font-size: 20px;
+  line-height: 18px;
+  color: #222;
+}
+.navbar-default .navbar-nav > li > a > i {
+  display: inline-block;
+}
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active:focus > a,
+.navbar-default .navbar-nav > li.active:hover > a,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus > a,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li.active:focus > a:focus,
+.navbar-default .navbar-nav > li.active:hover > a:focus,
+.navbar-default .navbar-nav > li:hover > a:focus,
+.navbar-default .navbar-nav > li:focus > a:focus {
+  background-color: #00923f;
+  color: #fff;
+}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.list-hover-slide>li {
+    position: relative;
+    overflow: hidden;
+}
+.list-hover-slide>li>a {
+    z-index: 1;
+    transition: .35s ease color;
+}
+.list-hover-slide>li>a:before, .list-hover-slide>li.dropdown.open>a:before {
+    content:'';
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-1000%);
+    border-bottom: solid 10px #00923f;
+    background: white;
+    transition: .25s ease transform;
+}
+.list-hover-slide>li>a:hover:before, .list-hover-slide>li.dropdown.open>a:before {
+    transform: translateX(0);
+}
+.list-hover-slide>li.dropdown.open {
+    overflow: initial;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+.espaciador {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #00923f;
+}
+.box {
+  padding: 55px 100px 50px 100px;
+  background: rgba(255,255,255,1);
+  position: relative;
+}
+.boxgris {
+  padding: 75px 100px 50px 100px;
+  background: rgba(245,245,245,1);
+  position: relative;
+}
+.boxgris p {
+	padding-top:10px;	
+}
+.box.first {
+  z-index:99;
+  margin-top: 0px;
+}
+ .interlineado{
+	line-height: 2.5;
+	text-align: justify; 
+ } 
+.box.last {
+  border-radius: 0 0 0px 0px;
+}
+.box h3 {
+	color:#444;
+	font-family: 'Oxygen', sans-serif;
+}
+#services h3 {
+    width: 60%;	
+}
+.box p {
+	margin-top: 20px;
+	color:#555;
+	text-align:justify;
+}
+#laempresa h3 {
+	padding:50px 50px 0px 50px;
+	text-align:center;
+}
+#laempresa h4 {
+	text-align:center;
+	font-weight:bold;
+}
+#laempresa .espaciador {
+	position:relative;
+    transform: translate(-50%, -50%);
+	left:50%;
+}
+#laempresa img{
+	padding:50px 50px 20px 50px;
+}
+.boxgris .box {
+  background-color: #f9f9f9;
+}
+.boxgris .plan {
+  background: #fff;
+  list-style: none;
+  margin: 0 0 20px;
+  text-align: justify;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0px 20px 20px 20px;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(128,128,128,0.75);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(128,128,128,0.75);
+  box-shadow: 2px 3px 5px 0px rgba(128,128,128,0.75);
+}
+.boxgris .plan h4 {
+	padding-top:35px;
+}
+
+.boxgris .bloquecentral {
+	margin-top:-20px;	
+}
+
+#services .row > div {
+  margin-bottom: 50px;
+}
+
+.gmap iframe {
+  height: 500px;
+  width: 100%;
+}
+.mapa{
+	padding-top:25px;	
+}
+.gmap{
+    height: 400px;
+    width: 100%;
+    box-shadow: 0px 0px 3px 3px #777;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+	z-index:1;
+	margin-top:0px;
+}
+.gmap2 iframe {
+  height: 500px;
+  width: 100%;
+}
+.mapa2{
+	padding-top:0px;	
+}
+.gmap2{
+    height: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 1px 1px #fff;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+	z-index:1;
+	margin-top:0px;
+}
+
+.gmapcontacto iframe {
+  height: 750px;
+  width: 400px;
+    position: relative;
+}
+.mapacontacto{
+	padding-top:25px;
+	padding-left:45px;	
+}
+.gmapcontacto{
+    height: 750px;
+    width: 400px;
+    box-shadow: 0px 0px 3px 3px #777;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+	z-index:1;
+	margin-top:0px;
+}
+.empresaimg {
+	margin: 0px 25px;
+}
+
+.img-responsive2 img {
+		display:block;
+		max-width:100%;
+		height:auto;
+}
+#laempresa h3 {
+	position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	}
+/* ======================================================================= */
+
+.titulo {
+	font-weight:bolder;
+}
+.recuadro {
+	background-color: #ddd;
+    width: 100%;
+    padding: 25px;
+    border-radius: 5%;
+}
+
+.recliente {
+	float: none;
+	width: 100%;
+	border-top: 3px solid #00923f;
+}
+
+.recuadro h4 {
+	color: #222;
+}
+
+.bannerempresa {
+  background-image: url(../img/banner3.png);
+  background-repeat: repeat-x;
+  background-position:center center;
+  background-size: auto 100%;
+  padding: 250px;
+  color: #f8f8f8;
+}
+
+.bannermedia {
+  background-image: url(../img/bannermedia.png);
+  background-repeat: repeat-x;
+  background-position:center center;
+  background-size: auto 100%;
+  padding: 250px;
+  color: #f8f8f8;
+}
+
+.bannercontacto {
+  background-image: url(../img/bannercontacto.png);
+  background-repeat: repeat-x;
+  background-position:center center;
+  background-size: auto 100%;
+  padding: 250px;
+  color: #f8f8f8;
+}
+
+.bannerempresa2 {
+  background-image: url(../img/bannerempresa4.png);
+  background-repeat: repeat-x;
+  background-position:center center;
+  background-size: auto 100%;
+  padding: 250px;
+  color: #f8f8f8;
+}
+.bannerfin {
+  background-image: url(../img/background.png);
+  background-position:center center;
+  background-size: auto 100%;
+  padding: 50px;
+  color: #f8f8f8;
+}
+.bannermedio {
+  background-image: url(../img/banner1.jpg);
+  background-position:center center;
+  background-size: auto 100%;
+  padding: 150px;
+  color: #f8f8f8;
+}
+
+.btn-proincob{color:#fff;background-color:#00923f;border-color:#00923f;}
+
+.btn-proincob.active,.btn-proincob.focus,.btn-proincob:active,.btn-proincob:focus,.btn-proincob:hover,.open>.dropdown-toggle.btn-proincob{color:#fff;background-color:#00923f;border-color:#00923f;}
+
+.btn-proincob.active,.btn-proincob:active,.open>.dropdown-toggle.btn-proincob{background-image:none}
+
+.btn-proincob.disabled,.btn-proincob.disabled.active,.btn-proincob.disabled.focus,.btn-proincob.disabled:active,.btn-proincob.disabled:focus,.btn-proincob.disabled:hover,.btn-proincob[disabled],.btn-proincob[disabled].active,.btn-proincob[disabled].focus,.btn-proincob[disabled]:active,.btn-proincob[disabled]:focus,.btn-proincob[disabled]:hover,fieldset[disabled] .btn-proincob,fieldset[disabled] .btn-proincob.active,fieldset[disabled] .btn-proincob.focus,fieldset[disabled] .btn-proincob:active,fieldset[disabled] .btn-proincob:focus,fieldset[disabled] .btn-proincob:hover{background-color:#00923f;border-color:#00923f;}
+
+.btn-proincob .badge{color:#00923f;background-color:#fff}
+
+#footer{
+	z-index:100;
+	background-color:#111;
+	margin-top:0px;
+	height:85px;
+	}

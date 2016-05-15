@@ -1,0 +1,233 @@
+ @-ms-viewport{
+    zoom: 1.0;
+  width: device-width;
+}
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+ @font-face {
+    font-family: Narkisim;
+	src: url(../fonts/nrkis.ttf);
+}
+ 
+@-webkit-keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------- */
+
+
+@media (min-width: 768px) {
+
+  /* Remve the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------- */
+
+
+@media (min-width: 768px) and (max-width:1200px) {
+	
+.navbar-default .navbar-nav > li > a {
+  padding: 30px 10px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #555;
+}
+	
+.gmapcontacto iframe {
+  height: 750px;
+  width: 400px;
+    position: relative;
+}
+.mapacontacto{
+	padding-top:25px;
+	padding-left:5px;	
+}
+.gmapcontacto{
+    height: 750px;
+    width: 400px;
+    box-shadow: 0px 0px 3px 3px #777;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+	z-index:1;
+	margin-top:0px;
+}
+	
+}
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------- */
+
+
+@media (min-width: 768px) and (max-width:998px) {
+	
+.boxgris .bloquecentral {
+	margin-top:0px;	
+}
+.navbar-default .navbar-brand {
+  margin-right: 0px;
+  margin-left: 20px;
+  width: 200px;
+  height: 78px;
+  background: url(../img/logo2.jpg) no-repeat 0 50%;
+}
+.navbar-nav {
+	margin:7.5px -15px;
+}
+}
+
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+@media (max-width: 768px) {
+	
+.boxgris {
+  padding: 75px 10px 50px 10px;
+  background: rgba(245,245,245,1);
+  position: relative;
+}
+	#laempresa img{
+	padding:50px 0px 20px 0px;
+}
+.empresaimg {
+	margin: 0px 0px;
+	width:100%;
+}
+	.navbar-default .navbar-brand {
+  margin-right: 0px;
+  margin-left: 20px;
+  width: 60%;
+  height: 78px;
+  background: url(../img/logo2.jpg) no-repeat 0 50%;
+}
+	.navbar-nav > li > a {
+		padding-top:30px !important; 
+		padding-bottom:30px !important;
+	}
+
+	.box {
+	  padding: 25px 25px 20px 25px;
+	}
+
+	#services h3 {
+		width: 80%;	
+	}
+
+	.img-responsive {
+		display:block;
+		max-width:1000%;
+		height:100%;
+	}
+	
+	.img-responsive2 img {
+		display:block;
+		max-width:100%;
+		height:auto;
+	}
+	
+	.carousel img {
+	  position: relative;
+	  width:auto;
+	  height:100%;
+	}
+	
+	.list-hover-slide>li>a:before, .list-hover-slide>li.dropdown.open>a:before {
+    content:'';
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-1000%);
+    border-bottom: solid 0px #00923f;
+    background: white;
+    transition: .25s ease transform;
+}
+
+.boxgris .bloquecentral {
+	margin-top:0px;	
+}
+
+.gmapcontacto iframe {
+  height: 400px;
+  width: 100%;
+    position: relative;
+}
+.mapacontacto{
+	padding-top:25px;
+	padding-left:0px;	
+}
+.gmapcontacto{
+    height: 400px;
+    width: 100%;
+    box-shadow: 0px 0px 3px 3px #777;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+	z-index:1;
+	margin-top:0px;
+}
+
+}
